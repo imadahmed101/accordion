@@ -4,4 +4,4 @@ React application built to display a FAQ page and have an accordion to show ques
 
 http://accordion.syedimadahmed.com
 
-<img src="./public/images/accordion.png"/>
+<img src="./public/accordion.png"/>
