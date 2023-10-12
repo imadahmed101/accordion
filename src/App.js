@@ -1,23 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import Questions from './Questions'
+import Accordion from './Accordion'
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='max-w-lg bg-blue-500 mx-auto text-white p-4'>
+      <h1 className='text-2xl font-semibold text-center'>Frequently Asked Questions</h1>
+      {Questions.map((q) => {
+        return(
+          <Accordion title={q.title} info={q.info}/>
+          )
+      })}
     </div>
   );
 }
